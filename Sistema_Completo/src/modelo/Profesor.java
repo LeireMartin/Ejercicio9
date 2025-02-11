@@ -23,5 +23,11 @@ public class Profesor extends Persona implements Trabajador {
     public void trabajar() {
        System.out.println( getNombre()+" está enseñando "+ especialidad);
     }
-    
+    //MostrarInformacion
+    @Override
+    public void muestraInformacion(){
+        super.muestraInformacion();
+        System.out.println("Especialidad: "+ especialidad);
+        
+    }
 }
